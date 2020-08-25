@@ -2,11 +2,11 @@
 
 To run this app
 
- 1. Clone the repository and unzip in your Spring Tool Suite
+ 1. Clone the repository and open **book-app-server** folder in your Spring Tool Suite
  2. Make sure MySQL is running in your system
  3. Next go to this src/main/resources/application.properties file and change your database name, username and password
- 4. Once completed, run the spring boot app
- 5. To run the react app, go the location src/main/webapp/reactjs and enter the command "npm start"
+ 4. Once completed, run the spring boot app in Spring Tool Suite or run the cmd "mvn spring-boot:run"
+ 5. To run the react app, go the location book-app-client and enter the command "npm install && npm start"
  6. Then go to http://localhost:3000/ you will get the page.
 
 
