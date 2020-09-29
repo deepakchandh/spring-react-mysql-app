@@ -10,6 +10,8 @@ import Footer from './components/Footer'
 import BookList from './components/BookList'
 import Book from './components/Book'
 import UserList from './components/UserList';
+import SignIn from './components/SignIn'
+import SignUp from './components/SignUp'
 
 function App() {
   const marginTop = {
@@ -23,6 +25,7 @@ function App() {
   return (
     <Router>
       <NavigationBar />
+      
       <Container>
         <Row>
           <Col lg={12} style={marginTop}>
@@ -32,6 +35,8 @@ function App() {
               <Route path='/edit/:id' exact component={Book}/>
               <Route path='/list' exact component={BookList}/>
               <Route path="/users" exact component={UserList}/>
+              <Route path='/signin' exact component={SignIn}/>
+              <Route path='/signup' exact component={SignUp}/>
             </Switch>
           </Col>
         </Row>

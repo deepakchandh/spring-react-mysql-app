@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 function NavigationBar() {
@@ -13,6 +13,8 @@ function NavigationBar() {
                 <Link to={"list"} className="nav-link">Book List</Link>
                 <Link to={"users"} className="nav-link">User List</Link>
             </Nav>
+            <Link to={"signin"}><Button variant="outline-light">SignIn</Button></Link>
+            <Link to={"signup"}><Button variant="outline-light">SignUp</Button></Link>
         </Navbar>
     )
     }
